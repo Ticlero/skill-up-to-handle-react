@@ -17,6 +17,18 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 class MyComponent extends Component {
+  static defaultProps = {
+    name: "강예린",
+    age: 23,
+    fiance: "장성현",
+  };
+
+  static propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number,
+    fiance: PropTypes.string.isRequired,
+  };
+
   render() {
     const { name, age, fiance } = this.props;
     return (
@@ -29,16 +41,16 @@ class MyComponent extends Component {
   }
 }
 
-MyComponent.defaultProps = {
-  name: "강예린",
-  age: 23,
-  fiance: "장성현",
-};
+// MyComponent.defaultProps = {
+//   name: "강예린",
+//   age: 23,
+//   fiance: "장성현",
+// };
 
-MyComponent.propTypes = {
-  name: PropTypes.string,
-  age: PropTypes.number,
-  fiance: PropTypes.string.isRequired,
-};
+// MyComponent.propTypes = {
+//   name: PropTypes.string,
+//   age: PropTypes.number,
+//   fiance: PropTypes.string.isRequired,
+// };
 
 export default MyComponent;

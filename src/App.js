@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
+import Counter from "./MyComponent/Counter";
+import EventPractice from "./MyComponent/EventPractice";
+import EventPracticeFunctionForm from "./MyComponent/EventPracticeFunctionForm";
 import MyComponent from "./MyComponent/MyComponent";
+import Say from "./MyComponent/Say";
+import ValidationSample from "./ValidationSample/ValidationSample";
 
 class App extends Component {
   render() {
@@ -15,12 +20,16 @@ class App extends Component {
       <div>
         <div className="react">{name}</div>
         <div>
-          <MyComponent
+          {/* <MyComponent
             name={properties.name}
             age={properties.age}
             fiance={properties.fiance}
           ></MyComponent>
-          {/* <MyComponent></MyComponent> */}
+          <Counter test="tt"></Counter>
+          {<Say></Say>} */}
+          {/* <EventPractice></EventPractice> */}
+          {/* <EventPracticeFunctionForm></EventPracticeFunctionForm> */}
+          <ValidationSample></ValidationSample>
         </div>
       </div>
     );

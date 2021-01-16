@@ -1,6 +1,10 @@
 {
   "name": "hello-react",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ticlero/skill-up-to-handle-react.git",
+  "author": "SeoungHyun JANG <cbiscuit@naver.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
